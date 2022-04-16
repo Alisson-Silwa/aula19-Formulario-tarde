@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <p><h2>Formulário de cadastro</h2></p>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="nome">Nome:</label></td>
+                <td><label for="sobrenome">Sobrenome</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="nome" name="nome" placeholder="Nome" required="true"></td>
+                <td><input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" required="true"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><label for="dataNasc">Data de nascimento</label></td>
+            </tr>
+            <tr>
+                <td><input type="email" id="email" name="email" placeholder="E-mail" required="true"></td>
+                <td><input type="date" id="dataNasc" name="dataNasc" placeholder="Data de nascimento" required="true"></td>                
+            </tr>
+            <tr>
+                <td><label for="endereco">Endereço</label></td>
+                <td><label for="estado"></label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="endereco" name="endereco" placeholder="Endereço" required="true"></td>
+                <td><select id="estado" name="estado" required="true">
+                    <option value="" selected disabled>Selecione o estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="cidade">Cidade</label></td>
+                <td><label for="cep">CEP</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="cidade" name="cidade" placeholder="Cidade" required="true"></td>
+                <td><input type="number" id="cep" name="cep" placeholder="CEP" required="true"></td>
+            </tr>
+            <tr>
+                <td><label for="descricao">Descrição</label></td>
+                <td><label for="profissao">Profissão</label></td>
+            </tr>
+            <tr>
+                <td><textarea id="descricao" name="descricao"  cols="19" rows="4" placeholder="Descrição"></textarea></td>
+                <td><input type="text" id="profissao" name="profissao" placeholder="Profissão" required="true"></td>
+            </tr>
+            <tr>
+                <td>CPF</td>
+                <td>RG</td>
+            </tr>
+            <tr>
+                <td><input type="file" id="cpf" name="cpf" placeholder="CPF" required="true"></td>
+                <td><input type="file" id="rg" name="rg" placeholder="RG" required="true"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" id="submit" name="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
